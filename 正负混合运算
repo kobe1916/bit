@@ -16,7 +16,7 @@ int main()
 	{
 		a = temp / i;        //注意：！！！！！temp 和 i 不可以都定义为整型！！！！！！！
 //		printf("%f\n",a);    //   (-1)/3=0如果二者都定义为整型
-		temp = -temp;
+		temp = -temp;        //用于改变符合
 		sum = sum + a;
 	}
 	printf("%f\n",sum);
