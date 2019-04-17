@@ -1,0 +1,23 @@
+
+#include<windows.h>
+int main()
+{
+	int i = 0;
+	int MAX = 0;            //定义一个MAX最大值
+	int arr[10] = {0};      //定义一个有10个元素的整形数组，给它初始化为0.
+	printf("请任意输入10个整数：");
+	for(i=1; i<=10; i++)
+	{
+		scanf("%d", &arr[i]); //这样做的目的是让所输入的10个数字刚好是数组的10个元素。
+	}
+	MAX = arr[1];//先把数组中的第一个元素视作最大的，再在以下的循环中比较。
+	for(i=2; i<=10; i++)
+	{
+		if(arr[i] > MAX)
+		{
+			MAX = arr[i];//每次比较后，将最大的值附给MAX
+		}
+	}
+	printf("最大的数为：%d", MAX);
+		return 0;
+}
