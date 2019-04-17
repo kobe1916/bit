@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() 
+{
+	int i=0,j=0,t=0;
+	printf("请输入ij:");
+	scanf("%d%d",&i,&j);
+	t = i;
+	i = j;
+	j = t;
+	printf("交换后ij的值为:%d %d",i,j); 
+	return 0;
+}
