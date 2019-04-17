@@ -1,0 +1,88 @@
+1、
+#include <stdio.h>
+int main()
+{
+    int a,b,c,t;
+    scanf("%d %d %d",&a,&b,&c);
+    if ( a < b )
+    {
+        t = a;
+        a = b;
+        b = t;
+    }
+    if( a < c )
+    {
+        t = a;
+        a = c;
+        c = t;
+    }
+    if( b < c )
+    {
+        t = b;
+        b = c;
+        c = t; 
+    }
+    printf("%d %d %d",a,b,c);
+    return 0;
+}
+
+
+/*
+//2、冒泡排序
+#include <stdio.h>
+int main()
+{
+    int i,j,t;
+    int a[3];
+    for ( i = 0; i < 3; i++ )
+    {
+        scanf("%d",&a[i]);
+    }
+    for ( j = 0; j < 2; j++ )
+    {
+        for ( i = 0; i < 2 - j; i++ )
+        {
+            if ( a[i] < a[i+1] )
+            {
+                t = a[i];
+                a[i] = a[i+1];
+                a[i+1] = t;
+            }
+        }
+    }
+    for ( i = 0; i < 3; i++ )
+    {
+        printf("%d ",a[i]);
+    }
+    printf("\n");
+    return 0;
+}
+
+
+
+
+//3、选择排序
+#include<stdio.h>
+#define M 3
+void main()
+{
+ int b[M],i,j,t,k;
+ for(i=0;i<M;i++)
+  scanf("%d",&b[i]);
+ for(i=0;i<M-1;i++)
+ {
+     k=i;
+  for(j=i+1;j<M;j++)
+   if(b[k]<b[j])
+    k=j;
+   if(i!=k)
+   {
+    t=b[i];
+    b[i]=b[k];
+    b[k]=t;
+   }
+ }
+   for(i=0;i<M;i++)
+    printf("%d ",b[i]);
+}
+*/
