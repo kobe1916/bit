@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+	int i = 0, j = 0;
+	printf("请输入ij：");
+	scanf("%d%d",&i,&j);
+	i = i +j;       //i'=i+j
+	j = i-j;        //j'=i'-j=i+j-j=i
+	i = i-j;        //i'=i'-j'=i+j-i=j
+	printf("交换后值为：%d  %d：",i,j);
+	return 0;
+	
+}
