@@ -5,7 +5,7 @@ int main()
     int a,b,c,t;
     scanf("%d %d %d",&a,&b,&c);
     if ( a < b )
-    {
+    {                     //用a保存最大数，所以判断条件用＜号，将不满足条件的转换
         t = a;
         a = b;
         b = t;
