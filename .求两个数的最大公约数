@@ -36,4 +36,4 @@ int division(int n,int m)
          m=temp%n;
          division(n,m); //重复上述过程
      }
- }       
+ }      
