@@ -8,7 +8,7 @@ int binary_search(int arr[], int k, int sz)	//将数组 要查找的数  数组�
 	while(left<=right)
 	{
 		int mid = left+(right-left)/2;      //定义中点  
-		if(arr[mid] < k)
+		if(arr[mid] < k)       用中点下标对应的元素与k比较
 		{
 			left = mid+1;
 		}
