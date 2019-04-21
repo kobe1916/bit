@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int binary_search(int arr[], int k, int sz)
+int binary_search(int arr[], int k, int sz)	//将数组 要查找的数  数组大小传入
 {
-	int left = 0;
+	int left = 0;		//左右下标均在函数内定义（若指定位置查找
 	int right = sz-1;
 	while(left<=right)
 	{
-		int mid = left+(right-left)/2;
+		int mid = left+(right-left)/2;      //定义中点  
 		if(arr[mid] < k)
 		{
 			left = mid+1;
@@ -74,7 +74,7 @@ int main()
 	int left = 0;
 	int right = sz-1;
 	//int ret = binary_search(arr, k, left, right);
-	int ret = binary_search(arr, k, 2, 7);
+	int ret = binary_search(arr, k, 2, 7);		//指定位查找
 	if(ret == -1)
 	{
 		printf("找不到\n");
