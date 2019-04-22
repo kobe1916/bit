@@ -19,3 +19,7 @@ int main()
 	return 0;
 	system("pause");
 }
+
+
+
+//思路:把图形分成上下两个三角形打印， 有无更好？
