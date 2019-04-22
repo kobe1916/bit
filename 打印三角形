@@ -16,8 +16,9 @@ int main()
 			printf("*");
 		printf("\n");
 	}
+	system("pause"); 	//暂停应放在return之前！
 	return 0;
-	system("pause");
+	//system("pause");
 }
 
 
