@@ -1,0 +1,19 @@
+#include "stdio.h"
+int main()
+{
+    int a,x, y, z;
+    printf("100到999之间的水仙花数有：\n");
+    for (a=100;a<1000;a++)
+    {
+        x = a / 100; //x为百位上的数
+        y = (a - x * 100) / 10; //y为十位上的数
+        z = a - x * 100 - y * 10; //z为个位上的数
+        if (a == x*x*x + y*y*y + z*z*z)
+        {
+            printf("%d\n", a);
+        }
+    }
+    getchar();
+    getchar();
+    return 0;
+}
