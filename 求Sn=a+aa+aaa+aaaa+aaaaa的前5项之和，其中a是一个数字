@@ -10,7 +10,7 @@ int main()
 	{
 		//sn += a;
 		//a = a * 10 + a;
-		a = a * 10 + num;
+		a = a * 10 + num;			//a*10后每次缺的都是个位数定义一个变量加上
 		sn = sn + a;
 	}
 	printf("%d", sn);
