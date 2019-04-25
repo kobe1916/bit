@@ -4,7 +4,9 @@ welcome to bit!!!!!
 w#################!
 we###############!!
 wel#############!!!
-...
+       ...
+       ...
+       ...
 welcome to bit!!!!!
 
 #include <string.h>
@@ -12,6 +14,7 @@ welcome to bit!!!!!
 
 int main()
 {
+	//定义两个数组，每次循环依次两边向中间各交换一个字符
 	char arr1[] = "welcome to bit!!!!!";
 	char arr2[] = "###################";
 	
@@ -24,7 +27,7 @@ int main()
 		arr2[left] = arr1[left];
 		arr2[right] = arr1[right];
 		printf("%s\n", arr2);
-		Sleep(1000);
+		Sleep(1000);		//win单位毫秒  ，Linux单位秒
 		system("cls");
 		left++;
 		right--;
