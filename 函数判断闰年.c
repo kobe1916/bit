@@ -1,4 +1,4 @@
-int is_leap_year(int y)
+int is_leap_year(int y)			//函数只完成判断闰年的的功能
 {
 	if(((y%4==0)&&(y%100!=0))||(y%400==0))
 		return 1;
