@@ -1,0 +1,25 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <stdlib.h>
+//fib
+// 1 1 2 3 5 8 13 21 34 55
+int fib(int n)
+{
+	while (1)
+	{
+		if (n < 3)
+			return 1;
+		else
+			return fib(n - 1) + fib(n - 2);
+
+	}
+}
+int main()
+{
+	int n;
+	scanf("%d", &n);
+	int a = fib(n);
+	printf("%d", a);
+	system("pause");
+	return 0;
+}
