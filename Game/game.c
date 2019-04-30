@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
+
 #include "game.h"   //引头文件！！！
 void Board(char a[Row][Col],int row ,int col)//棋盘的初始化(全部为' '）
 {
