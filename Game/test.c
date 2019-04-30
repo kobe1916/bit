@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
+
 #include "game.h"
 
 void menu()//只进行打印菜单功能
