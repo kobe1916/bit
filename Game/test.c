@@ -19,6 +19,8 @@ void game()
 	//数组初始化  打印网格图
 	Board(a,Row,Col);
 	ShowBoard(a,Row,Col);
+	
+	//游戏开始
 
 }
 
