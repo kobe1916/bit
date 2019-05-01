@@ -26,7 +26,7 @@ void ShowBoard(char a[Row][Col],int row,int col)//打印棋盘
 	//	//每一行其实由两部分组成“ %c |...”和“_ _ _|...”
 	//}
 
-	int i;
+	int i;				//可根据row、col值的改变时程序具有可扩展性（五子棋，七子棋。。。）
 	for (i = 0; i < row; i++)
 	{
 		int j = 0;
