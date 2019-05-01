@@ -21,7 +21,8 @@ void game()
 	Board(a,Row,Col);
 	ShowBoard(a,Row,Col);
 	
-	//游戏开始
+	//游戏开始，人机交换进行
+	
 
 }
 
