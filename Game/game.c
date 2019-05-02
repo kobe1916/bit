@@ -52,3 +52,51 @@ void ShowBoard(char a[Row][Col],int row,int col)//打印棋盘
 	}
 
 }
+
+void Player(char a[Row][Col],int row,int col)
+{
+	//int i=0, j=0;
+	int x = 0;
+	int y = 0;
+
+	printf("玩家走>");
+	
+	while (1)//若输入不合法则循环输入直至输入正确
+	{
+		printf("请输入要走的坐标：");
+		scanf("%d%d", &x, &y);
+		if ((x <= row && x >= 1) && (y >= 1 && y <= col))
+		{
+			//先判断坐标是否合法，在判断是否为空，切记合法后直接赋值！
+			if (a[x - 1][y - 1] = ' ')
+			{
+				a[x - 1][y - 1] = '*';
+				break;
+			}
+			else
+				printf("坐标被占用，请重新输入！\n");
+		}
+		else
+			printf("坐标超界，请重新输入！\n");
+		
+	}
+	//printf("玩家走(请输入要走的坐标)：");
+	//scanf("%d%d", i,j);
+	////判断坐标合法性     注意坐标的转换 人类视角与计算机视角
+	//if ((0 <= i - 1 && i - 1 <= row) && (0 <= i - 1 && i - 1 <= col))
+	//{
+	//	a[i - 1][j - 1] = '*';
+	//}
+	//else
+	//{
+	//
+	//	printf("坐标输入错误，请重新输入！");
+	//}
+	////判断坐标是否被占用
+
+}
+
+void Computer(char a[Row][Col], int row, int col)
+{
+
+}
