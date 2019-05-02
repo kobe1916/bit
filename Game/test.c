@@ -21,7 +21,10 @@ void game()
 	Board(a,Row,Col);
 	ShowBoard(a,Row,Col);
 	
-	//游戏开始，人机交换进行
+	//游戏开始
+	Player(a, Row, Col);
+	Compuer(a, Row, Col);
+	ShowBoard(a, Row, Col);//下完棋后展示棋盘
 	
 
 }
