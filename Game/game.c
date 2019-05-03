@@ -1,6 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
-
 #include "game.h"   //引头文件！！！
 void Board(char a[Row][Col],int row ,int col)//棋盘的初始化(全部为' '）
 {
@@ -26,7 +25,7 @@ void ShowBoard(char a[Row][Col],int row,int col)//打印棋盘
 	//	//每一行其实由两部分组成“ %c |...”和“_ _ _|...”
 	//}
 
-	int i;				//可根据row、col值的改变时程序具有可扩展性（五子棋，七子棋。。。）
+	int i;
 	for (i = 0; i < row; i++)
 	{
 		int j = 0;
@@ -50,7 +49,6 @@ void ShowBoard(char a[Row][Col],int row,int col)//打印棋盘
 		}
 		printf("\n");
 	}
-
 }
 
 void Player(char a[Row][Col],int row,int col)
@@ -59,7 +57,7 @@ void Player(char a[Row][Col],int row,int col)
 	int x = 0;
 	int y = 0;
 
-	printf("玩家走>");
+	printf("玩家走>\n");
 	
 	while (1)//若输入不合法则循环输入直至输入正确
 	{
@@ -67,8 +65,8 @@ void Player(char a[Row][Col],int row,int col)
 		scanf("%d%d", &x, &y);
 		if ((x <= row && x >= 1) && (y >= 1 && y <= col))
 		{
-			//先判断坐标是否合法，在判断是否为空，切记合法后直接赋值！
-			if (a[x - 1][y - 1] = ' ')
+			//先判断坐标是否合法，在判断是否为空，切记合法后直接赋值！(判断用==)
+			if (a[x - 1][y - 1] == ' ')
 			{
 				a[x - 1][y - 1] = '*';
 				break;
@@ -98,5 +96,22 @@ void Player(char a[Row][Col],int row,int col)
 
 void Computer(char a[Row][Col], int row, int col)
 {
-
+	int x = 0;
+	int y = 0;
+	printf("电脑走:>\n");
+	//x = rand() % 3;
+	//y = rand() % 3;
+	/*x = rand() % row;
+	y = rand() % col;*/
+	while (1)
+	{
+		x = rand() % row;
+		y = rand() % col; 
+		if (a[x][y] == ' ')
+		{
+			a[x][y] = '#';
+			break;
+		}
+	}
+	//Q:玩家输入电脑走过的位置，电脑棋子被替换
 }
