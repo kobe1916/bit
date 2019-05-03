@@ -20,12 +20,15 @@ void game()
 	//数组初始化  打印网格图
 	Board(a,Row,Col);
 	ShowBoard(a,Row,Col);
-	
-	//游戏开始
-	Player(a, Row, Col);
-	Compuer(a, Row, Col);
-	ShowBoard(a, Row, Col);//下完棋后展示棋盘
-	
+
+	//进入游戏,未分出胜负之前一直进行游戏
+	while (1)
+	{
+		Player(a, Row, Col);
+		Computer(a, Row, Col);
+		ShowBoard(a, Row, Col);//下完棋后展示棋盘
+
+	}
 
 }
 
