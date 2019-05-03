@@ -113,5 +113,5 @@ void Computer(char a[Row][Col], int row, int col)
 			break;
 		}
 	}
-	
+	//Q:玩家输入电脑走过的位置，电脑棋子被替换
 }
