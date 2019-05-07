@@ -12,25 +12,25 @@ void menu()//只进行打印菜单功能
 	scanf("%d", &i);*/   //此处应该放在main函数menu调用中
 }
 
-void game()
-{
-	//进入游戏后先打印网格图（定义二维数组）
-	char a[Row][Col] = { 0 };
+//void game()
+//{
+//	//进入游戏后先打印网格图（定义二维数组）
+//	char a[Row][Col] = { 0 };
+//
+//	//数组初始化  打印网格图
+//	Board(a, Row, Col);
+//	ShowBoard(a, Row, Col);
+//
+//	//进入游戏,未分出胜负之前一直进行游戏
+//	while (1)
+//	{
+//		Player(a, Row, Col);
+//		Computer(a, Row, Col);
+//		ShowBoard(a, Row, Col);//下完棋后展示棋盘
+//
+//	}
 
-	//数组初始化  打印网格图
-	Board(a,Row,Col);
-	ShowBoard(a,Row,Col);
 
-	//进入游戏,未分出胜负之前一直进行游戏
-	while (1)
-	{
-		Player(a, Row, Col);
-		Computer(a, Row, Col);
-		ShowBoard(a, Row, Col);//下完棋后展示棋盘
-
-	}
-
-}
 
 int main()
 {
