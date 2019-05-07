@@ -115,3 +115,47 @@ void Computer(char a[Row][Col], int row, int col)
 	}
 	//Q:玩家输入电脑走过的位置，电脑棋子被替换
 }
+
+/判断场上情况
+//void IsWin(char a[Row][Col], int row, int col);
+char IsWin(char a[Row][Col], int row, int col)
+{
+	//情况：赢 败 平 继续
+	//赢的条件：横，竖，撇，捺
+	int i = 0;
+	//int j = 0;
+	for (i = 0; i < row; i++)//恒
+	{
+		if (a[i][0] == a[i][1] && a[i][1] == a[i][2] && a[i][0] != ' ')
+			return a[i][0];
+			//直接返回数组中的元素（可以省略一次判断！），如果是玩家赢*电脑赢#
+	}
+	for (i = 0; i < col; i++)//竖
+	{
+		if (a[0][i] == a[1][i] && a[1][i] == a[2][i] && a[0][i] != ' ')
+			return a[i][0];
+	}
+	if (a[0][0] == a[1][1] && a[1][1] == a[2][2] && a[1][1] != ' ')//撇
+		return a[1][1];
+	if (a[0][2] == a[1][1] && a[1][1] == a[2][0] && a[1][1] != ' ')//捺
+		return a[1][1];
+	if (IsFull(a, row, col))//平局
+		return '0';
+	return ' ';//继续
+
+
+}
+
+//void IsFull(char a[Row][Col], int row, int col)
+int IsFull(char a[Row][Col], int row, int col)
+{
+	int i, j;
+	for (i = 0; i < row; i++)
+	{
+		for (j = 0; j < col; j++)
+			if (a[i][j] == ' ')
+				return 0;
+		//return 1;
+	}
+	return 1;//用0，1判断，没有空格说明平局，返回1（在上式中1为真返回平局）
+}
