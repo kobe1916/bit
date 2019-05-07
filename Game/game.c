@@ -143,7 +143,7 @@ char IsWin(char a[Row][Col], int row, int col)
 		return '0';
 	return ' ';//继续
 
-
+//Q:怎么增强灵活性   （借鉴打印网格）
 }
 
 //void IsFull(char a[Row][Col], int row, int col)
