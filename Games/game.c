@@ -1,12 +1,7 @@
-#pragma once
-#include <stdio.h>
-#include <stdlib.h>
+#define _CRT_SECURE_NO_WARNINGS 1
+#include "game.h"
 
-#define Row 9
-#define Col 9
+void game()
+{
 
-#define Rows Row+2
-#define Cols Col+2
-
-void game();
-
+}
