@@ -8,5 +8,7 @@
 #define Rows Row+2
 #define Cols Col+2
 
-void game();
-
+//函数的声明
+InitMine(char a[Rows][Cols],int rows,int cols,char set);
+Show(char a[Rows][Cols], int rows, int cols);
+Show(char a[Rows][Cols], int rows, int cols);
