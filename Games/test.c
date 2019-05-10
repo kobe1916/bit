@@ -1,4 +1,3 @@
-
 #define _CRT_SECURE_NO_WARNINGS 1
 #include "game.h"
 
@@ -11,12 +10,23 @@ void menu()
 	
 }
 
+void game()
+{
+	//char mine[Row][Col];//'0'
+	char mine[Rows][Cols];//'0'   边界也是要有的  只是不展示出来！
+	char show_mine[Rows][Cols];//'*'
+	/*InitMine(mine,int Rows,int Cols,'0');
+	InitMine(show_mine, int Rows, int Cols, '*');*/
+	InitMine(mine,  Rows,  Cols, '0');
+	InitMine(show_mine,  Rows,  Cols, '*');
+	Show(mine, Rows, Cols);
+	Show(show_mine, Rows, Cols);
+}
+
 int main()
 {
 	int n = 0;
-
-	char mine[Row][Col];
-	char show_mine[Rows][Cols];
+	
 	do
 	{
 		printf("请输入你的选择：\n");
