@@ -19,8 +19,9 @@ void game()
 	InitMine(show_mine, int Rows, int Cols, '*');*/
 	InitMine(mine,  Rows,  Cols, '0');
 	InitMine(show_mine,  Rows,  Cols, '*');
-	Show(mine, Rows, Cols);
-	Show(show_mine, Rows, Cols);
+	//Show(mine, Rows, Cols);
+	Show(mine, Row, Col);
+	Show(show_mine, Row, Col);
 }
 
 int main()
@@ -45,7 +46,10 @@ int main()
 
 
 
+
+
 	
 	system("pause");
 	return 0;
 }
+
