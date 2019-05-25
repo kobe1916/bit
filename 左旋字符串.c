@@ -1,7 +1,6 @@
 /*方法1.采用循环移位，对需要旋转的k个字符按顺序进行旋转，
 先将要旋转的一个字符保存起来，将后面的往前挪动一位，
 再将保存起来的这个字符赋给最后一位，这样连续循环k次*/
-
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 #include <stdlib.h>
