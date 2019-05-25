@@ -53,6 +53,7 @@ int main()
 /*方法2.三步旋转法，先将要旋转的k个字符串逆序，再将剩余的字符串逆序，
 最后再对整个字符串逆序就得到了旋转k个字符后的字符串*/
 
+
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 #include <stdlib.h>
@@ -106,13 +107,12 @@ int main()
 }
 
 
-/*方法3.指针*/
 
+/*方法3.指针*/
 #define _CRT_SECURE_NO_WARNINGS 1
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 
 void left_remove(char arr[], int n)     //spin函数用以完成旋转字符的功能
 {
