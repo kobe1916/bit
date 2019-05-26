@@ -50,3 +50,26 @@ int main()
 	system("pause");
 	return 0;
 }
+
+//3.n&(n-1)的方法
+
+#include<stdio.h>
+int count_one_bits(unsigned int n)//看待-1是2^32-1
+{
+	int count = 0;//计数
+	while (n!=0)//在n!=0之前，n = n&(n - 1)被执行几次，就有几个1.
+	{
+			count++;
+			n = n&(n - 1);//去掉1
+	}
+	return count;
+}
+int main()
+{
+	int num = 11;
+	int ret = count_one_bits(num);
+	printf("ret=%d\n", ret);
+	system("pause");
+	return 0;
+}
+
