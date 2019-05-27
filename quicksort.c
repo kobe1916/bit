@@ -4,6 +4,8 @@ int arr[N] = { 5,4,9,6,7,3,1,2,8,0 };
 
 void quick_sort( int left, int right)
 {
+	if (left > right)
+		return;
 	int temp = arr[left];
 	int i = left;
 	int j = right;
@@ -33,9 +35,10 @@ void quick_sort( int left, int right)
 	arr[i] = temp;
 
 
-	//quick_sort(left, i-1 );    //
-	//quick_sort( i+1 , right);    //
+	quick_sort(left, i-1 );    //
+	quick_sort( i+1 , right);    //
 }
+
 int main()
 {
 	int i = 0;
@@ -54,3 +57,4 @@ int main()
 	system("pause");
 	return  0;
 }
+
