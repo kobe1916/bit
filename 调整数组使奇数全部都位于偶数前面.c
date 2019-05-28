@@ -1,4 +1,4 @@
-void Print(int* p, int right)
+void Print(int* p, int right)		//打印输出
 {
 	int i = 0;
 	for (i = 0; i <= right; i++)
@@ -8,20 +8,20 @@ void Print(int* p, int right)
 	printf("\n");
 }
 
-void separate(int arr[], int left, int right)
+void separate(int arr[], int left, int right)		//对数组进行判断调整
 {
 	while (left <= right)
 	{
-		if (arr[left] % 2 == 1 && arr[right] % 2 == 0)
+		if (arr[left] % 2 == 1 && arr[right] % 2 == 0)		//左边为奇，右边为偶，两边下标同时移动
 		{
 			left++;
 			right--;
 		}
-		else if (arr[left] % 2 == 1 && arr[right] % 2 == 1)
+		else if (arr[left] % 2 == 1 && arr[right] % 2 == 1)	//左右同为奇数时，左边下标移动右边不动。
 		{
 			left++;
 		}
-		else if (arr[left] % 2 == 0 && arr[right] % 2 == 1)
+		else if (arr[left] % 2 == 0 && arr[right] % 2 == 1)	//当左为偶数，右为奇数时则进行交换，同时下标继续移动
 		{
 			int tmp = arr[left];
 			arr[left] = arr[right];
@@ -29,7 +29,7 @@ void separate(int arr[], int left, int right)
 			left++;
 			right--;
 		}
-		else
+		else							//
 		{
 			right--;
 		}
