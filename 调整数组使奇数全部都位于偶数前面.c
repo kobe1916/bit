@@ -1,3 +1,62 @@
+//调整数组使奇数全部都位于偶数前面（更优解）
+void Depart_Arry(int arr[], int size)
+{
+	int left = 0;
+	int right = size - 1;
+	while (left < right)			//此处类比快速排序
+	{
+		//从前到后找偶数
+		while (left < right&&arr[left] % 2 != 0)
+		{
+			left++;
+		}
+		//从后到前找奇数
+		while (left < right&&arr[right] % 2 == 0)
+		{
+			right--;
+		}
+		//交换
+		if (left < right)
+		{
+			int tmp = arr[left];
+			arr[left] = arr[right];
+			arr[right] = tmp;
+		}
+	}
+}
+
+//打印数组
+void Print(int arr[], int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		printf("%d ", arr[i]);
+	}
+	printf("\n");
+}
+
+int main()
+{
+
+	int arr[] = { 2, 3, 4, 6, 5, 8, 7, 10, 9, 1 };
+	int size = sizeof(arr) / sizeof(arr[0]);
+	Depart_Arry(arr, size);
+	Print(arr, size);
+	system("pause");
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+//v2
+
+
 void Print(int* p, int right)		//打印输出
 {
 	int i = 0;
@@ -52,52 +111,5 @@ int main()
 
 
 
-//调整数组使奇数全部都位于偶数前面
-void Depart_Arry(int arr[], int size)
-{
-	int left = 0;
-	int right = size - 1;
-	while (left < right)
-	{
-		//从前到后找偶数
-		while (left < right&&arr[left] % 2 != 0)
-		{
-			left++;
-		}
-		//从后到前找奇数
-		while (left < right&&arr[right] % 2 == 0)
-		{
-			right--;
-		}
-		//交换
-		if (left < right)
-		{
-			int tmp = arr[left];
-			arr[left] = arr[right];
-			arr[right] = tmp;
-		}
-	}
-}
-
-//打印数组
-void Print(int arr[], int size)
-{
-	for (int i = 0; i < size; i++)
-	{
-		printf("%d ", arr[i]);
-	}
-	printf("\n");
-}
-
-int main()
-{
-
-	int arr[] = { 2, 3, 4, 6, 5, 8, 7, 10, 9, 1 };
-	int size = sizeof(arr) / sizeof(arr[0]);
-	Depart_Arry(arr, size);
-	Print(arr, size);
-	system("pause");
-	return 0;
-}
 
 
