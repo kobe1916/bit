@@ -14,8 +14,6 @@ int num (int n)
 			if (n%2 == 0)//偶数
 			{
 				return n + num(n/2);//偶数直接返回第n行的个数加第n-1行的个数
-
-;
 			}
 			else//奇数
 			{
