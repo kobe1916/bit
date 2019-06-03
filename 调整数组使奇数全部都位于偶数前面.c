@@ -6,7 +6,7 @@ void Depart_Arry(int arr[], int size)
 	while (left < right)			//此处类比快速排序
 	{
 		//从前到后找偶数
-		while (left < right&&arr[left] % 2 != 0)
+		while (left < right&&arr[left] % 2 != 0)   //注意：两个条件须同时满足
 		{
 			left++;
 		}
