@@ -1,4 +1,6 @@
-#include <stdio.h>
+//字符串逆序  abcdefg --> gfedcba
+
+#include <stdio.h>
 #include <stdlib.h>
  
 void reverse_string(char * string)
