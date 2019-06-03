@@ -28,7 +28,7 @@ int main()
 		arr2[right] = arr1[right];
 		printf("%s\n", arr2);
 		Sleep(1000);		//win单位毫秒  ，Linux单位秒
-		system("cls");
+		system("cls");		//清屏
 		left++;
 		right--;
 	}
