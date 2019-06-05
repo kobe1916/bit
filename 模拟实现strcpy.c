@@ -7,13 +7,13 @@ char* my_strcpy(char* dest, const char* src)
 	char* ret = dest;
 	assert(dest != NULL);
 	assert(src != NULL);
-	while (*src != '\0')
+	while (*src != '\0')     //找需要copy的部分
 	{
-		*dest = *src;
-		dest++;
+		*dest = *src;    //copy
+		dest++;          //地址移动进行下一个字符的copy
 		src++;
 	}
-	*dest = *src;
+	*dest = *src;           //串尾加上'\0'
 	return ret;
 }
 
