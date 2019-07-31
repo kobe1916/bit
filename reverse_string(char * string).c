@@ -1,9 +1,9 @@
 //字符串逆序  abcdefg --> gfedcba
-//reverse_string(char * string)
+//reverse_string(char *string)
 #include <stdio.h>
 #include <stdlib.h>
  
-void reverse_string(char * string)
+void reverse_string(char *string)
 {
     string++;
     if (*string!='\0')
