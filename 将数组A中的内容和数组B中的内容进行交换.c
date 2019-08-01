@@ -11,7 +11,6 @@ arr2[i] = t;
 }
 }
 
- 
 
 int main()
 {
