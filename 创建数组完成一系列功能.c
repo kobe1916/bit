@@ -3,6 +3,8 @@
 #include<string.h>
 void InitArry(int arr[], int size)
 {
+
+        //初始化
 	//如果想把数组的每一个元素全部初始化为0，则可以采用memset函数初始化
 	//memset(arr, 0, sizeof(arr[0]) * size);
 	//如果是把数组的每一个元素初始化为其他数字，则采用for循环的方式
@@ -19,6 +21,7 @@ void EmptyArry(int arr[], int size)
  
 void ReverseArry(int arr[], int size)
 {
+        //反转   创建临时变量，对换左右
 	int left = 0;
 	int right = size - 1;
 	while (left < right)
