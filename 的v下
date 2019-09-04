@@ -1,0 +1,10 @@
+ res(str);
+  }
+  str--;
+  printf("%c",*str);
+}
+int main()
+{
+  char *p = "adcdefgh";
+  res(p);
+  printf("\n");
