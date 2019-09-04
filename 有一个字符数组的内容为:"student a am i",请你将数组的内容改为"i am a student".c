@@ -22,6 +22,7 @@ void reverve_swap(char *left, char *right)
         *right = tmp;
         left++;
         right--;
+        /*逆序单词的做法即：找个中间变量，从两头开始交换字母*/
     }
 }
 char *reverve(char *p)
