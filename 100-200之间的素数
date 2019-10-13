@@ -12,6 +12,8 @@ int main()
 				break;
 		}
 		if(j==i)
+		//如果中途就break跳出  j肯定不等于i,也说明不是素数,说明遍历完了
+
 		{
 			conut++;
 			printf("%d ", i);
