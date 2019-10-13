@@ -1,5 +1,5 @@
 //函数判断素数
-
+http://c.biancheng.net/view/498.html
 /*     
 ！！！！！有问题！！！！！！
 
