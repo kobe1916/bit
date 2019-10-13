@@ -34,3 +34,40 @@ int main()
 	return 0;
 }
 */
+
+
+#define  _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdlib.h>
+ 
+int prime(int n)
+{
+	int i;
+	if (n < 2) {
+		printf("%d不是素数", n);
+	}
+	else {
+		for (i = 2; i < n; i++) {//判断n在2~n-1中有没有因数
+			if (n%i == 0)//如果用可以除尽的数,则非素数
+				break;
+		}
+		if (i < n) {//存在2~n-1之间有因数
+			printf("%d不是素数\n", n);
+		}
+		else
+			printf("%d是素数\n", n);
+ 
+			
+	}
+	return 0;
+}
+ 
+int main() {
+	int n;
+	printf("请输入一个数:\n");
+	scanf("%d", &n);
+	prime(n);
+	system("pause");
+	return 0;
+	
+}
