@@ -1,4 +1,8 @@
 //函数判断素数
+
+/*     
+！！！！！有问题！！！！！！
+
 int prime(int x)
 {
 	int i = 0;
@@ -26,3 +30,4 @@ int main()
 	system("pause");
 	return 0;
 }
+*/
