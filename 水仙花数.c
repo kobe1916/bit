@@ -15,3 +15,23 @@ int main()
     }
     return 0;
 }
+
+//判断水仙花数（3位）
+int main()
+{
+	int x = 0;
+	int b, s, g;
+	printf("please input x:>");
+	scanf("%d", &x);
+
+	b = x / 100;
+	s = x / 10 % 10;
+	g = x % 10;
+	if( (b * b*b) + (s * s*s) + (g * g*g)==x)
+		printf("yes!");
+	else
+		printf("no!");
+
+	system("pause");
+	return 0;
+}
