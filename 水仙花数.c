@@ -13,7 +13,5 @@ int main()
             printf("%d\n", a);
         }
     }
-    getchar();
-    getchar();
     return 0;
 }
