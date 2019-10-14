@@ -16,6 +16,22 @@ int main()
     return 0;
 }
 
+int main()
+{
+	int x;
+	int b, s, g;
+	for (x = 100; x < 1000; x++)
+	{
+		b = x / 100;
+		s = x / 10 % 10;
+		g = x % 10;
+		if ((b * b*b) + (s * s*s) + (g * g*g) == x)
+			printf("%d ", x);
+	}
+	system("pause");
+	return 0;
+}
+
 //判断水仙花数（3位）
 int main()
 {
